@@ -1,0 +1,11 @@
+name: FLOW CI
+
+on:
+  workflow_call:
+
+permissions: write-all
+
+jobs:
+  call-workflow2-1:
+    uses: santhu736852/TestWorkflow/.github/workflows/test-workflow2.yml
+    secrets: inherit
